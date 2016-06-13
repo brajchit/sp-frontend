@@ -12,6 +12,15 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/master.css" rel="stylesheet">
 
+    <!-- Google font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -21,28 +30,212 @@
 </head>
 
 <body>
-    <header class="container">
-        <nav>
-            
+    <header id="banner">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        S<span class="fa fa-flask fa-lg" aria-hidden="true"></span>P
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="action"><a href="#">Inicio</a></li>
+                        <li class=""><a href="#pacientes">Pacientes</a></li>
+                        <li class=""><a href="#operarios">Operarios</a></li>
+                        <li class=""><a href="#">Cont&aacute;ctenos</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+        <!-- ************** banner************* -->
+        <div class="container">
+            <section class="jumbotron">
+                <h2>Bienvenido a</h2>
+                <h1>Salud Primero S.A.</h1>
+                <p>Gestión de Resultados de Exámenes Médicos.</p>
+                <a class="btn btn-big btn-left" href="#pacientes" role="button">Conocer m&aacute;s</a>
+                <a class="btn btn-big btn-right" data-toggle="modal" data-target="#myModalLogin" href="#" role="button">Ingresar</a>
+            </section>
+            <!-- Modal Login -->
+            <div class="modal fade" id="myModalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <form>
+                            <div class="form-group form-modal">
+                                <label for="exampleInputEmail1">Usuario</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ejemplo@hotmail.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="clave">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Elegir Rol</label>
+                                <select class="form-control">
+                                    <option>Paciente</option>
+                                    <option>Operario</option>
+                                    <option>Laboratorista</option>
+                                </select>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Check me out
+                                </label>
+                            </div>
+                            <div class="form-footer">
+                                <button type="submit" class="btn btn-big btn-left btn-small">Ingresar</button>
+                                <p>
+                                    <a data-toggle="modal" data-target="#myModalRegister" href="#" role="button" href="#">Registrarse</a> gratis
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Register -->
+            <div class="modal fade" id="myModalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <form>
+                            <div class="form-group form-modal">
+                                <label for="exampleInputEmail1">Nombre de Usuario</label>
+                                <input type="text" class="form-control" id="exampleInputUserName" placeholder="ingrese nombre de usuario">
+                            </div>
+                            <div class="form-group form-modal">
+                                <label for="exampleInputEmail1">Correo</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ejemplo@hotmail.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="ingrese contraseña">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Elegir Rol</label>
+                                <select class="form-control">
+                                    <option>Paciente</option>
+                                    <option>Operario</option>
+                                    <option>Laboratorista</option>
+                                </select>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Check me out
+                                </label>
+                            </div>
+                            <div class="form-footer">
+                                <button type="submit" class="btn btn-big btn-left btn-small">Registrar</button>
+                                <p>
+                                    si ya tiene cuenta <a data-toggle="modal" data-target="#myModalLogin" href="#" role="button" href="#">Ingresar</a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <!-- **** banner************* -->
     </header>
 
 
-    <!-- ************** banner************* -->
-    <section class="container">
-
-    </section><!-- **** banner************* -->
-    <section>
-        <article>
-
-        </article>
-        <article>
-
-        </article>
+    <section id="pacientes" class="container">
+        <div class="col-sm-2"></div>
+        <header class="col-sm-8">
+            <h1>Usuario como Paciente</h1>
+            <h3>
+                Un paciente se acerca a un Centro Médico, donde una enfermera
+                tomará una o varias muestras médicas del paciente.
+            </h3>
+        </header>
+        <div class="row">
+            <article class="col-sm-4">
+                <h1><i class="fa fa-user-md fa-2x" aria-hidden="true"></i></h1>
+                <h3>Centros Medicos</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <button class="btn btn-big btn-left btn-small" type="button" name="button">Ingresar</button>
+            </article>
+            <article class="col-sm-4">
+                <h1><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></h1>
+                <h3>Mis Examenes</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <button class="btn btn-big btn-left btn-small" type="button" name="button">Ingresar</button>
+            </article>
+            <article class="col-sm-4">
+                <h1><i class="fa fa-user fa-2x" aria-hidden="true"></i></h1>
+                <h3>Mis Datos</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <button class="btn btn-big btn-left btn-small" type="button" name="button">Ingresar</button>
+            </article>
+        </div>
     </section>
 
+    <section id="operarios" class="container">
+        <div class="col-sm-3"></div>
+        <header class="col-sm-6">
+            <h1>Usuario como Operario</h1>
+            <h3>
+                Un operario ingresa la información descrita en la ficha del
+                paciente.
+            </h3>
+        </header>
+        <div class="row">
+            <article class="col-sm-4">
+                <h1><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></h1>
+                <h3>Registrar una muestra</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <button class="btn btn-big btn-left btn-small" type="button" name="button">Ingresar</button>
+            </article>
+            <article class="col-sm-4">
+                <h1><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></h1>
+                <h3>Modificar/Eliminar muestra</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <button class="btn btn-big btn-left btn-small" type="button" name="button">Ingresar</button>
+            </article>
+            <article class="col-sm-4">
+                <h1><i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i></h1>
+                <h3>Estadisticas</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <button class="btn btn-big btn-left btn-small" type="button" name="button">Ingresar</button>
+            </article>
+        </div>
+    </section>
     <footer>
-
+        <section class="container">
+            <div class="row">
+                <nav class="nav-footer">
+                    <ul>
+                        <li><a href="#"><span class="fa fa-facebook-f fa-lg" aria-hidden="true"></span></a></li>
+                        <li><a href="#"><span class="fa fa-twitter fa-lg" aria-hidden="true"></span></a></li>
+                        <li><a href="#"><span class="fa fa-google-plus fa-lg" aria-hidden="true"></span></a></li>
+                        <li><a href="#"><span class="fa fa-instagram fa-lg" aria-hidden="true"></span></a></li>
+                    </ul>
+                    <p>
+                        &copy; | 2016 Copyright
+                    </p>
+                </nav>
+            </div>
+        </section>
     </footer>
 
     <!-- Scripts -->
