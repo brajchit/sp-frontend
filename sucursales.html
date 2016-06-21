@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+ <!-- Joyce -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Salud Primero</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/master.css" rel="stylesheet">
+
+    <!-- Google font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header >
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        S<span class="fa fa-flask fa-lg" aria-hidden="true"></span>P
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="action"><a href="#">Sucursales de los centros médicos</a></li>
+                        <li class=""><a href="#misexamanes">Mis exámenes</a></li>
+                        <li class=""><a href="#misdatos">Mis datos</a></li>
+                        <li class=""><a href="index.html">Cerrar sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ************** cabecera************* -->
+        <div class="container">
+            <section id="cabecera" align="center">
+                <h2>Bienvenido a</h2>
+                <h1>Salud Primero S.A.</h1>
+                <p>Gestión de Resultados de Exámenes Médicos.</p>
+                
+            </section>
+            
+            
+        </div>
+        
+        <!-- **** cabecera************* -->
+    </header>
+
+
+    
+
+    <section id="misexamanes" class="container">
+        <div class="col-sm-3"></div>
+        <header class="col-sm-6">
+            <h1>Sucursales a nivel nacional</h1>
+            <h3>
+                Escoja el centro médico
+            </h3>
+        </header>
+        <div class="row">
+            <article class="col-sm-4">
+                <h1><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></h1>
+                <h3>Guayaquil</h3>
+                <div class="list-group" id="guayaquil">
+					
+				 </div>
+             </article>
+            <article class="col-sm-4">
+                <h1><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></h1>
+                <h3>Quito</h3>
+                <div class="list-group">
+					<a href="#" class="list-group-item ">First item</a>
+					<a href="#" class="list-group-item">Second item</a>
+					<a href="#" class="list-group-item">Third item</a>
+				 </div>
+                
+            </article>
+            <article class="col-sm-4">
+                <h1><i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i></h1>
+                <h3>Cuenca</h3>
+                <div class="list-group">
+					<a href="#" class="list-group-item ">First item</a>
+					<a href="#" class="list-group-item">Second item</a>
+					<a href="#" class="list-group-item">Third item</a>
+				 </div>
+            </article>
+        </div>
+    </section>
+	
+	
+    <footer>
+        <section class="container">
+            <div class="row">
+                <nav class="nav-footer">
+                    <ul>
+                        <li><a href="#"><span class="fa fa-facebook-f fa-lg" aria-hidden="true"></span></a></li>
+                        <li><a href="#"><span class="fa fa-twitter fa-lg" aria-hidden="true"></span></a></li>
+                        <li><a href="#"><span class="fa fa-google-plus fa-lg" aria-hidden="true"></span></a></li>
+                        <li><a href="#"><span class="fa fa-instagram fa-lg" aria-hidden="true"></span></a></li>
+                    </ul>
+                    <p>
+                        &copy; | 2016 Copyright
+                    </p>
+                </nav>
+            </div>
+        </section>
+    </footer>
+	<script >
+		
+		
+			var xhttp=new XMLHttpRequest();
+			xhttp.onreadystatechange=function(){
+				if(xhttp.readyState==4 && xhttp.status==200){
+					var json=JSON.parse(xhttp.responseText);
+					
+					var combo=document.getElementById("guayaquil");
+					json.forEach(function(user){
+						
+					var element=document.createElement("p");
+					
+					element.textContent=user.usuario;
+					
+					combo.appendChild(element);
+					}
+					);
+					
+				}
+			};
+			xhttp.open("GET","usuarios.json",true);
+			xhttp.send();
+	
+	</script>
+    <!-- Scripts -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
