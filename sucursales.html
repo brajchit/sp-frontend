@@ -61,17 +61,17 @@
                 <h2>Bienvenido a</h2>
                 <h1>Salud Primero S.A.</h1>
                 <p>Gestión de Resultados de Exámenes Médicos.</p>
-                
+
             </section>
-            
-            
+
+
         </div>
-        
+
         <!-- **** cabecera************* -->
     </header>
 
 
-    
+
 
     <section id="misexamanes" class="container">
         <div class="col-sm-3"></div>
@@ -86,7 +86,7 @@
                 <h1><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></h1>
                 <h3>Guayaquil</h3>
                 <div class="list-group" id="guayaquil">
-					
+
 				 </div>
              </article>
             <article class="col-sm-4">
@@ -97,7 +97,7 @@
 					<a href="#" class="list-group-item">Second item</a>
 					<a href="#" class="list-group-item">Third item</a>
 				 </div>
-                
+
             </article>
             <article class="col-sm-4">
                 <h1><i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i></h1>
@@ -110,8 +110,8 @@
             </article>
         </div>
     </section>
-	
-	
+
+
     <footer>
         <section class="container">
             <div class="row">
@@ -130,35 +130,36 @@
         </section>
     </footer>
 	<script >
-		
-		
-			var xhttp=new XMLHttpRequest();
-			xhttp.onreadystatechange=function(){
-				if(xhttp.readyState==4 && xhttp.status==200){
-					var json=JSON.parse(xhttp.responseText);
-					
-					var combo=document.getElementById("guayaquil");
-					json.forEach(function(user){
-						
-					var element=document.createElement("p");
-					
-					element.textContent=user.usuario;
-					
-					combo.appendChild(element);
-					}
-					);
-					
-				}
-			};
-			xhttp.open("GET","usuarios.json",true);
-			xhttp.send();
-	
+
+
+			// var xhttp=new XMLHttpRequest();
+			// xhttp.onreadystatechange=function(){
+			// 	if(xhttp.readyState==4 && xhttp.status==200){
+			// 		var json=JSON.parse(xhttp.responseText);
+			//
+			// 		var combo=document.getElementById("guayaquil");
+			// 		json.forEach(function(user){
+			//
+			// 		var element=document.createElement("p");
+			//
+			// 		element.textContent=user.usuario;
+			//
+			// 		combo.appendChild(element);
+			// 		}
+			// 		);
+			//
+			// 	}
+			// };
+			// xhttp.open("GET","usuarios.json",true);
+			// xhttp.send();
+
 	</script>
     <!-- Scripts -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/master.js" charset="utf-8"></script>
 </body>
 
 </html>
