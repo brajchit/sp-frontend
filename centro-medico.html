@@ -40,74 +40,130 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="#">
                         S<span class="fa fa-flask fa-lg" aria-hidden="true"></span>P
                     </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="action"><a href="#">Sucursales de los centros médicos</a></li>
-                        <li class=""><a href="#misexamanes">Mis exámenes</a></li>
-                        <li class=""><a href="#misdatos">Mis datos</a></li>
-                        <li class=""><a href="index.html">Cerrar sesión</a></li>
+                        <li class="action"><a href="#">Regresar</a></li>
+                        <li class=""><a href="#misexamanes">Descripción</a></li>
+                        <li class=""><a href="#misdatos">Como llegar</a></li>
+                        <li class=""><a href="index.html">Galería</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- ************** cabecera************* -->
-        <div class="container">
-            <section id="cabecera" align="center">
-                <h2>Bienvenido a</h2>
-                <h1>Salud Primero S.A.</h1>
-                <p>Gestión de Resultados de Exámenes Médicos.</p>
-
-            </section>
-
-
-        </div>
-
-        <!-- **** cabecera************* -->
+        
     </header>
 
 
 
 
-    <section id="misexamanes" class="container">
+    <section  class="container">
         <div class="col-sm-3"></div>
         <header class="col-sm-6">
-            <h1>Sucursales a nivel nacional</h1>
-            <h3>
-                Escoja el centro médico
-            </h3>
+            <h1>Centro médico1</h1>
+            
         </header>
-        <div class="row">
-            <article class="col-sm-4">
-                <img src="http://sinmiedosec.com/wp-content/uploads/2015/09/Historia-y-Significado-de-la-Bandera-de-Guayaquil.jpg" width="150" height="100">
-                <h3>Guayaquil</h3>
-                <div class="list-group" id="guayaquil">
-
-				</div>
-             </article>
-            <article class="col-sm-4">
-               <img src="http://www.ubicatv.com/wp-content/uploads/2015/09/Bandera-Quito.png" width="150" height="100">
-
-                <h3>Quito</h3>
-                <div class="list-group" id="quito">
-
-				 </div>
-
-            </article>
-            <article class="col-sm-4">
-               <img src="http://www.bandetex.com/resources/archivosbd/productos_galeria/3c999a0e91e01f5be442c33b58c542a1.jpg" width="150" height="100">
-                <h3>Cuenca</h3>
-                <div class="list-group" id="cuenca">
-
-				 </div>
-            </article>
-        </div>
+			<div class="row">
+				
+				<article class="col-sm-12">
+					<h3>Descripción del centro médico</h3> 
+					<div class="row" align="center">
+						<div class="col-sm-6"  align="right">
+							<label style="font-weight: bold">Nombre del centro médico: </label>
+						</div>
+						<div class="col-sm-4 align" align="left">
+							<label id="nombreTxt"></label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6"  align="right">
+							<label style="font-weight: bold" >Dirección: </label>
+						</div>
+						<div class="col-sm-4 align" align="left">
+							<label id="direccionTxt">Vía a la Costa</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6"  align="right">
+							<label style="font-weight: bold">Tipos de Exámenes: </label>
+						</div>
+						<div class="col-sm-4 align" align="left">
+							<a href="#" data-toggle="modal" data-target="#myModalListaExams">Ver</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6"  align="right">
+							<label style="font-weight: bold">Horarios: </label>
+						</div>
+						<div class="col-sm-4 align " align="left">
+							<a href="#" data-toggle="modal" data-target="#myModalHorario">Ver</a>
+						</div>
+						
+						
+					</div>
+				 </article>
+				 </div>			  
+			
+       
     </section>
-
+	<div class="modal fade" id="myModalListaExams" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <ul class="list-group">
+							  
+							  
+						</ul>
+                    </div>
+                </div>
+    </div>
+	<div class="modal fade" id="myModalHorario" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <table class="table table-striped">
+    <thead>
+      <tr>
+		<th>Horas</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miércoles</th>
+		<th>Juves</th>
+		<th>Viernes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>7h30-9h30</td>
+        <td>Pediatria</td>
+		<td>Pediatria</td>
+		<td>Pediatria</td>
+		<td>Pediatria</td>
+		<td>Pediatria</td>
+      </tr>
+      <tr>
+        <td>9h30-11h30</td>
+        <td>Pediatria</td>
+		<td>Pediatria</td>
+		<td>Pediatria</td>
+		<td>Pediatria</td>
+		<td>Pediatria</td>
+      </tr>
+      <tr>
+        <td>11h30-13h30</td>
+        <td>Pediatria</td>
+		<td>Pediatria</td>
+		<td>Pediatria</td>
+		<td>Pediatria</td>
+		<td>Pediatria</td>
+      </tr>
+    </tbody>
+  </table>
+                    </div>
+                </div>
+    </div>
 
     <footer>
         <section class="container">
@@ -126,13 +182,13 @@
             </div>
         </section>
     </footer>
-
+	
     <!-- Scripts -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/master.js" charset="utf-8"></script>
+    <script src="assets/js/master1.js" charset="utf-8"></script>
 </body>
 
 </html>
