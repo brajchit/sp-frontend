@@ -1,0 +1,39 @@
+{
+	"centros":{
+		"centromedico1":
+		[
+			{
+			"nombre": "El Cisne",
+			"direccion": "34 y el Oro",
+			"tiposDeExamenes":["sangre","heces"],
+			"horarios":[
+				{"row1": [
+								{"especialidad":"Pediatria"},
+								{"especialidad":"Cardiologia"},
+								{"especialidad":"Dermatologo"},
+								{"especialidad":"Dermatologo"},
+								{"especialidad":"Dermatologo"}
+						]
+				},
+				{"row2": [
+								{"especialidad":"Pediatria"},
+								{"especialidad":"Cardiologia"},
+								{"especialidad":"Dermatologo"},
+								{"especialidad":"Dermatologo"},
+								{"especialidad":"Dermatologo"}
+						]
+				},
+				{"row3": [
+								{"especialidad":"Pediatria"},
+								{"especialidad":"Cardiologia"},
+								{"especialidad":"Dermatologo"},
+								{"especialidad":"Dermatologo"},
+								{"especialidad":"Dermatologo"}
+						]
+				}
+				]
+			
+			}
+		]
+}
+}
