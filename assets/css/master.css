@@ -26,7 +26,9 @@ header#banner {
 }
 
 /* The animation code */
-
+section#cabecera{
+	align:center;
+}
 @keyframes mybanner {
     0%    {background-image: url('../img/1-4.jpg');}
     50%   {background-image: url('../img/2.jpg');}
