@@ -54,7 +54,7 @@ Screenshots
 }
 
 .screenshots .row {
-    padding: .75em 10px;
+    /*padding: .75em 10repx;*/
 }
 .screenshots .row li{
     list-style: none;
