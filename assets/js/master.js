@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	
-	
+
+
     $.getJSON("usuarios.json", function (jsonResp) {
         jsonResp.sucursales.sucursalGuayaquil.forEach(function(item) {
             //tb puede ser asi
@@ -22,11 +22,13 @@ $(document).ready(function() {
             var $li = $('<a href="centro-medico.html" class="list-group-item"></a>')
             $li.text(item.sucursal3);
             $("#cuenca").append($li)
-			 
+
         });
     })
-	
-	
+
+	$("#btn-regist").click(function(event) {
+		// alert('msg');
+		$("#myModalLogin").modal('hide');
+	});
+
 });
-
-
