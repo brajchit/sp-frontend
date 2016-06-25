@@ -1,12 +1,12 @@
 $(document).ready(function() {
     $("#ingresar").click(function(event) {
-        window.location = "http://localhost:8888/sp-frontend/sucursales.html"
+        window.location = "sucursales.html"
     });
     var $dateYear = $("<p/>").html("&copy; | " + new Date().getFullYear() + " Copyright");
     $("#contactenos .nav-footer").append($dateYear);
 
     $(".entrar").click(function(event) {
-        window.location = "http://localhost:8888/sp-frontend/sucursales.html"
+        window.location = "sucursales.html"
     });
 
     $('#myModalZoom').on('show.bs.modal', function(e) {
