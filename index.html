@@ -44,7 +44,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.html">
                         S<span class="fa fa-flask fa-lg" aria-hidden="true"></span>P
                     </a>
                 </div>
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </nav>
-        
+
         <!-- ************** banner************* -->
         <div class="container">
             <section class="jumbotron">
@@ -77,11 +77,11 @@
                         <form>
                             <div class="form-group form-modal">
                                 <label for="exampleInputEmail1">Usuario</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ejemplo@hotmail.com">
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ejemplo@hotmail.com" required="">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Contraseña</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="clave">
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="clave" required="">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Elegir Rol</label>
@@ -91,13 +91,8 @@
                                     <option>Laboratorista</option>
                                 </select>
                             </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Check me out
-                                </label>
-                            </div>
                             <div class="form-footer">
-                                <button type="submit" class="btn btn-big btn-left btn-small">Ingresar</button>
+                                <button type="submit" class="btn btn-big btn-left btn-small entrar">Ingresar</button>
                                 <p>
                                     <a id="btn-regist" data-toggle="modal" data-target="#myModalRegister" href="#" role="button" href="#">Registrarse</a> gratis
                                 </p>
@@ -113,15 +108,15 @@
                         <form>
                             <div class="form-group form-modal">
                                 <label for="exampleInputEmail1">Nombre de Usuario</label>
-                                <input type="text" class="form-control" id="exampleInputUserName" placeholder="ingrese nombre de usuario">
+                                <input type="text" class="form-control" id="exampleInputUserName" placeholder="ingrese nombre de usuario" required="">
                             </div>
                             <div class="form-group form-modal">
                                 <label for="exampleInputEmail1">Correo</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ejemplo@hotmail.com">
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ejemplo@hotmail.com" required="">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Contraseña</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="ingrese contraseña">
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="ingrese contraseña" required="">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Elegir Rol</label>
@@ -133,13 +128,13 @@
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox"> Check me out
+                                    <input type="checkbox"> Acepto los Terminos
                                 </label>
                             </div>
                             <div class="form-footer">
-                                <button type="submit" class="btn btn-big btn-left btn-small">Registrar</button>
+                                <button type="submit" class="btn btn-big btn-left btn-small entrar" >Registrar</button>
                                 <p>
-                                    si ya tiene cuenta <a data-toggle="modal" data-target="#myModalLogin" href="#" role="button" href="#">Ingresar</a>
+                                    si ya tiene cuenta <a data-toggle="modal" data-target="#myModalLogin" role="button" href="#" id="btn-toggle-login">Ingresar</a>
                                 </p>
                             </div>
                         </form>
@@ -167,7 +162,7 @@
                 <p>
                     Aquí usted podrá consultar que exámenes puede realizar en el centro médico con sus respectivos horarios.
                 </p>
-                <button class="btn btn-big btn-left btn-small" type="button" name="button">Ingresar</button>
+                <button class="btn btn-big btn-left btn-small" type="button" name="button" id="ingresar">Ingresar</button>
             </article>
             <article class="col-sm-4">
                 <h1><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></h1>
@@ -263,9 +258,7 @@
                         <li><a href="#"><span class="fa fa-google-plus fa-lg" aria-hidden="true"></span></a></li>
                         <li><a href="#"><span class="fa fa-instagram fa-lg" aria-hidden="true"></span></a></li>
                     </ul>
-                    <p>
-                        &copy; | 2016 Copyright
-                    </p>
+                    <!--  -->
                 </nav>
             </div>
         </section>
@@ -277,6 +270,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/master.js" charset="utf-8"></script>
+    <script src="assets/js/main.js" charset="utf-8"></script>
 </body>
 
 </html>

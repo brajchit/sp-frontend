@@ -43,7 +43,7 @@ Screenshots
     list-style: none;
 }
 /*-----------------------*/
-#myModalLogin .modal-content img{
+#myModalZoom .modal-content img{
     width: 100%;
     height: auto;
 }
@@ -54,7 +54,7 @@ Screenshots
 }
 
 .screenshots .row {
-    /*padding: .75em 10repx;*/
+    padding: .75em 0;
 }
 .screenshots .row li{
     list-style: none;
