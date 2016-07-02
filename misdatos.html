@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
- 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +10,7 @@
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/master.css" rel="stylesheet">
-	<link href="assets/css/barraDeEstado.css" rel="stylesheet"  >
+	<link rel="stylesheet" href="assets/css/misdatos.css" media="screen" title="no title" charset="utf-8">
 	
     <!-- Google font -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -22,7 +21,6 @@
     <!-- Font-awesome -->
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 </head>
-
 <body>
     <header >
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -42,102 +40,72 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class=""><a href="sucursales.html">Cambiar de centro</a></li>
-                        <li class="action"><a href="#">Mis exámenes</a></li>
-                        <li class=""><a href="misdatos.html">Mis datos</a></li>
+                        <li class=""><a href="misexamenes.html">Mis exámenes</a></li>
+                        <li class="action"><a href="#">Mis datos</a></li>
                         <li class=""><a href="index.html">Cerrar sesión</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- ************** cabecera************* -->
-        <div class="container">
+       
             <section id="cabecera" align="center">
                 
                 <h1>Salud Primero S.A.</h1>
                 <p>Gestión de Resultados de Exámenes Médicos.</p>
-				<h2>Mis exámenes</h2>
+				<h2>Mis datos</h2>
 			</section>
-		</div>
-	</header>
 	
-	<section class="container" >
-		<div class="row">
-			<div class="col-sm-2">
-				
-			</div>
-			<div class="col-sm-1">
-				Desde
-			</div>
-			<div class="col-sm-1">
-				<input type="date" name="fecha">
-			</div>
-			<div class="col-sm-2">
-				
-			</div>
-			<div class="col-sm-1">
-				Hasta
-			</div>
-			<div class="col-sm-1">
-				<input type="date" name="fecha">
-			</div>
-			<div class="col-sm-2">
-				
+	</header>
+	<section class="container" id="formulario">
+	<form>
+	 <div class="row">
+		<div class="col-sm-6">
+		<div class="form-group row">
+			<label for="nombre" class="col-sm-2 form-control-label">Nombres</label>
+			<div class="col-sm-10">
+			  <input type="text" class="form-control" id="nombre" placeholder="Nombres" required>
 			</div>
 		</div>
+		<div class="form-group row">
+			<label for="apellido" class="col-sm-2 form-control-label">Apellidos</label>
+			<div class="col-sm-10">
+			  <input type="text" class="form-control" id="apellido" placeholder="Apellidos" required>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="ced" class="col-sm-2 form-control-label">Cédula</label>
+			<div class="col-sm-10">
+			  <input type="number" class="form-control" id="ced" placeholder="Cédula" required>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="dir" class="col-sm-2 form-control-label">Dirección</label>
+			<div class="col-sm-10">
+			  <input type="text" class="form-control" id="dir" placeholder="Dirección" >
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="telf" class="col-sm-2 form-control-label">Teléfono</label>
+			<div class="col-sm-10">
+			  <input type="number" class="form-control" id="telf" placeholder="Teléfono" required>
+			</div>
+		</div>
+	  <div class="form-group row">
+		<label for="inputEmail3" class="col-sm-2 form-control-label">Email</label>
+		<div class="col-sm-10">
+		  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+		</div>
+	  </div>
+	  
+  
+  </div>
+  <div class="col-sm-6">
+  </div>
+  </div>
+  <button class="btn btn-default" type="submit" name="button">Enviar</button>
+</form>
 	</section>
-	<div class="container" >
-	<div class="table-responsive">
-		<table class="table table-striped" >
-                    <thead >
-                        <tr id="listaEncabezado">
-                            <td>Tipo </td>
-                            <td>Fecha </td>
-                            <td>Estado</td>
-                            
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="examenes/examen1.pdf" >Exámen de Sangre</a></td>
-                            <td>09/09/09</td>
-                            <td>
-								<ol class="progtrckr" data-progtrckr-steps="2">
-									<li class="progtrckr-done">Ingresado</li>
-									<li class="progtrckr-done">Proceso</li>
-									<li class="progtrckr-done">Listo</li>
-								</ol>
-							</td>
-                            
-                        </tr>
-                        <tr>
-                            <td>Exámen de Heces</td>
-                            <td>09/09/09</td>
-                            <td>
-								<ol class="progtrckr" data-progtrckr-steps="2">
-									<li class="progtrckr-done">Ingresado</li>
-									<li class="progtrckr-todo">En Proceso</li>
-									<li class="progtrckr-todo">Finalizado</li>
-								</ol>
-							</td>
-                            
-                        </tr>
-                        <tr>
-                            <td>Exámen de Orina</td>
-                            <td>09/09/09</td>
-                            <td>
-								<ol class="progtrckr" data-progtrckr-steps="2">
-									<li class="progtrckr-done">Ingresado</li>
-									<li class="progtrckr-done">En Proceso</li>
-									<li class="progtrckr-todo">Finalizado</li>
-								</ol>
-							</td>
-                            
-                        </tr>
-                    </tbody>
-                </table>
-	</div>
-	</div>
-
 	<footer>
         <section class="container">
             <div class="row">
@@ -152,11 +120,11 @@
             </div>
         </section>
     </footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js" charset="utf-8"></script>
-    <script src="assets/js/master.js" charset="utf-8"></script>
+    <script src="assets/js/misdatos.js" charset="utf-8"></script>
+   
 </body>
 
 </html>

@@ -1,0 +1,31 @@
+¿Por qué no programadores .. Programa?
+Yo era de incredulidad cuando leí esta observación de Reginald Braithwaite:
+
+Al igual que yo, el autor está teniendo problemas con el hecho de que 199 de cada 200 solicitantes para cada puesto de trabajo de programación no pueden escribir código. Repito: no pueden escribir ningún código en absoluto.
+El autor se está refiriendo es Imran, que está, evidentemente, apartando un montón de programadores que no pueden escribir un programa simple:
+
+Después de un poco de ensayo y error que he descubierto que las personas que luchan por código no sólo luchan en grandes problemas, o incluso los problemas más bien pequeñas (es decir, escribir una aplicación de una lista enlazada). Luchan con pequeños problemas.
+
+Así que me puse a desarrollar preguntas que pueden identificar este tipo de desarrollador y se acercó con una clase de preguntas que llamo "FizzBuzz Preguntas" el nombre de un juego de niños juegan a menudo (o se hacen para jugar) en las escuelas en el Reino Unido. Un ejemplo de una pregunta Fizz-Buzz es el siguiente:
+
+Escribir un programa que imprime los números del 1 al 100. Sin embargo, para múltiplos de tres impresión "Fizz" en lugar del número y de los múltiplos de cinco de impresión "zumbido". Para los números que son múltiplos de tres y cinco de impresión "FizzBuzz".
+
+La mayoría de los buenos programadores deberían ser capaces de escribir en un papel un programa que hace esto en un marco de un par de minutos. ¿Quieres saber algo de miedo? La mayoría de los graduados de los sci no puede. También he visto programadores senior autoproclamados toman más de 10-15 minutos para escribir una solución.
+
+Dan Kegel tuvo una experiencia similar contratar programadores de nivel de entrada:
+
+Una fracción sorprendentemente grande de los solicitantes, incluso los que tienen títulos y doctorados en ciencias de la computación de maestría, fallan durante las entrevistas cuando se le preguntó para llevar a cabo tareas básicas de programación. Por ejemplo, he entrevistado personalmente graduados que no pueden contestar "Escribir un bucle que cuenta de 1 a 10" o "¿Cuál es el número después de F en hexadecimal?" Menos trivialmente, he entrevistado a muchos candidatos que no pueden utilizar la recursividad para resolver un problema real. Estas son habilidades básicas; cualquier persona que carece de ellos probablemente no ha hecho mucho de programación.
+
+Hablando en nombre de los ingenieros de software que tienen que entrevistar a candidatos a emplear, puedo decir con seguridad que estamos cansado de hablar con los candidatos que no pueda programar su salida de una bolsa de papel. Si usted puede escribir con éxito un ciclo que va de 1 a 10 en todos los idiomas en su hoja de vida, puede hacer aritmética simple sin una calculadora, y puede utilizar la recursividad para resolver un problema real, ya estás por delante del resto!
+
+Entre Reginald, Dan, e Imran, yo estoy empezando a tener un poco preocupado. Estoy más que dispuesto a cortar de nuevo cuño desarrolladores de software holgura al principio de su carrera. Todo el mundo tiene que empezar en alguna parte. Pero me inquieta y horrorizados que cualquier llamada programador buscar trabajo sin ser capaz de escribir el más simple de los programas. Eso es una bofetada en la cara a cualquier persona que escribe el software para una vida.
+
+La gran brecha entre quienes pueden programar y los que no puede programa es bien conocida. Supuse que las personas que solicitan un trabajo como programador ya había cruzado esta sima. Al parecer, esto no es una suposición razonable de hacer. Al parecer, se requiere la detección de estilo FizzBuzz para mantener los entrevistadores de perder su tiempo entrevistando a los programadores que no pueda programar.
+
+Para que no piense la prueba FizzBuzz es demasiado fácil - y es deslumbrante, intencionadamente fácil - un comentarista al mensaje de Imran toma nota de su eficacia:
+
+No me gustaría entrevistadores para despedir [el FizzBuzz] comprobar si es demasiado fácil - en mi experiencia, es realmente sorprendente cuántos candidatos son incapaces de las tareas de programación más simples.
+
+Tal vez sea tonto para comenzar a entrevistar a un programador sin mirar a su primer código. En Vértigo, se requiere un código de ejemplo, antes incluso de proceder a la etapa de la entrevista telefónica. Y nuestra entrevista en el sitio incluye un pequeño ejercicio de codificación. Nada difícil, eso sí, sólo un ejercicio básico para ir a través de los movimientos de la construcción de una pequeña aplicación en una hora o así. Aunque ha habido una o dos notables de llama-outs, en su mayor parte, esta estrategia ha funcionado bien para nosotros. Nos permite centrarnos en la ingeniería de software real en la entrevista sin tener que recurrir a las preguntas rompecabezas tediosas.
+
+Es una pena lo que tiene que hacer tanto de preselección que permita el lujo de los programadores de entrevista que se puede realmente programa. Sería divertido si no fuera tan jodidamente deprimente. No soy un fan de la certificación, pero hace que me pregunte si Steve McConnell estaba en algo con toda su charla de crear una verdadera profesión de la ingeniería de software.
