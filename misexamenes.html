@@ -11,6 +11,7 @@
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/master.css" rel="stylesheet">
+	<link href="assets/css/barraDeEstado.css" rel="stylesheet"  >
 	
     <!-- Google font -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -66,7 +67,8 @@
 			</section>
 		</div>
 	</header>
-	<section class="container" align="center>
+	
+	<section class="container" >
 		<div class="row">
 			<div class="col-sm-2">
 				
@@ -91,6 +93,59 @@
 			</div>
 		</div>
 	</section>
+	<div class="container" >
+	<div class="table-responsive">
+		<table class="table table-striped" >
+                    <thead >
+                        <tr id="listaEncabezado">
+                            <td>Nombre del Exámen</td>
+                            <td>Fecha</td>
+                            <td>Estado</td>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#" >Exámen de Heces</a></td>
+                            <td>09/09/09</td>
+                            <td>
+								<ol class="progtrckr" data-progtrckr-steps="2">
+									<li class="progtrckr-done">Ingresado</li>
+									<li class="progtrckr-done">Proceso</li>
+									<li class="progtrckr-done">Listo</li>
+								</ol>
+							</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Exámen de Sangre</td>
+                            <td>09/09/09</td>
+                            <td>
+								<ol class="progtrckr" data-progtrckr-steps="2">
+									<li class="progtrckr-done">Ingresado</li>
+									<li class="progtrckr-todo">En Proceso</li>
+									<li class="progtrckr-todo">Finalizado</li>
+								</ol>
+							</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Exámen de Orina</td>
+                            <td>09/09/09</td>
+                            <td>
+								<ol class="progtrckr" data-progtrckr-steps="2">
+									<li class="progtrckr-done">Ingresado</li>
+									<li class="progtrckr-done">En Proceso</li>
+									<li class="progtrckr-todo">Finalizado</li>
+								</ol>
+							</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+	</div>
+	</div>
+
 	<footer>
         <section class="container">
             <div class="row">
