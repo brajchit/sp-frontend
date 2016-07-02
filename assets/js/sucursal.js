@@ -14,3 +14,21 @@
     // }
     // google.maps.event.addDomListener(window, 'load', initialize);
 // });
+$(document).ready(function() {
+	
+	$.getJSON("assets/json/centro_medico.json", function (jsonResp) {
+		
+        jsonResp.centros.centromedico1.forEach(function(item) {
+            
+           
+            $("#nombreTxt").text(item.nombre);
+            $("#direccionTxt").text(item.direccion);
+			item.tiposDeExamenes.forEach(function(item){
+				var $li = $('<li class="list-group-item"></li>');
+				$li.text(item);
+            $(".list-group").append($li)
+			})
+        });
+		
+    })
+	})
