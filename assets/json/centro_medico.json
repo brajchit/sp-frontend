@@ -6,32 +6,31 @@
 			"nombre": "El Cisne",
 			"direccion": "34 y el Oro",
 			"tiposDeExamenes":["sangre","heces"],
-			"horarios":[
-				{"row1": [
+			"rowa": [
 								{"especialidad":"Pediatria"},
 								{"especialidad":"Cardiologia"},
 								{"especialidad":"Dermatologo"},
 								{"especialidad":"Dermatologo"},
 								{"especialidad":"Dermatologo"}
 						]
-				},
-				{"row2": [
+				,
+				"rowb": [
 								{"especialidad":"Pediatria"},
 								{"especialidad":"Cardiologia"},
 								{"especialidad":"Dermatologo"},
 								{"especialidad":"Dermatologo"},
 								{"especialidad":"Dermatologo"}
 						]
-				},
-				{"row3": [
+				,
+				"rowc": [
 								{"especialidad":"Pediatria"},
 								{"especialidad":"Cardiologia"},
 								{"especialidad":"Dermatologo"},
 								{"especialidad":"Dermatologo"},
 								{"especialidad":"Dermatologo"}
 						]
-				}
-				]
+				
+				
 			
 			}
 		]

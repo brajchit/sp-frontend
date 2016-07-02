@@ -14,6 +14,10 @@
     // }
     // google.maps.event.addDomListener(window, 'load', initialize);
 // });
+function verHorario(){
+	
+	$( "tr#primerFila" ).append("<td>lalala</td>");
+}
 $(document).ready(function() {
 	
 	$.getJSON("assets/json/centro_medico.json", function (jsonResp) {
@@ -26,9 +30,37 @@ $(document).ready(function() {
 			item.tiposDeExamenes.forEach(function(item){
 				var $li = $('<li class="list-group-item"></li>');
 				$li.text(item);
-            $(".list-group").append($li)
+				$(".list-group").append($li)
 			})
+			
+				
+				
+				item.rowa.forEach(function(item)
+				{
+					var $li = $('<td></td>');
+				$li.text(item.especialidad);
+				$( "tr#primerFila" ).append($li)
+				}
+				);
+				item.rowb.forEach(function(item)
+				{
+					var $li = $('<td></td>');
+				$li.text(item.especialidad);
+				$( "tr#segundaFila" ).append($li)
+				}
+				);
+				item.rowc.forEach(function(item)
+				{
+					var $li = $('<td></td>');
+				$li.text(item.especialidad);
+				$( "tr#terceraFila" ).append($li)
+				}
+				);
+				
+			
+			
         });
 		
     })
+	
 	})
