@@ -1,20 +1,35 @@
-$(document).ready(function() {
-    $(".contact-label>.contact-input").on("focusin", function() {
-        $(this).parent("label").toggleClass("lb-focus");
-        if (!$(".contact-label.lb-focus .contact-input").val()) {
-            $(".contact-label.lb-focus span").toggleClass("placeholder-focus");
-        }
-    });
-    $(".contact-label>.contact-input").on("focusout", function() {
-        if (!$(".contact-label.lb-focus .contact-input").val()) {
-            $(".contact-label.lb-focus span").toggleClass("placeholder-focus");
-        }
-        $(this).parent("label").toggleClass("lb-focus");
-    });
+function fileSelected() {
 
-    $(".contact-label>span").click(function() {
-        var inputSpan = $(this).parent("label").children(".contact-input")
-        inputSpan.focus();
-    });
+    // hide different warnings
+    
 
-});
+    // get selected file element
+    var oFile = document.getElementById('image_file').files[0];
+
+    
+    
+
+    
+    var oImage = document.getElementById('preview');
+
+    // prepare HTML5 FileReader
+    var oReader = new FileReader();
+        oReader.onload = function(e){
+
+        // e.target.result contains the DataURL which we will use as a source of the image
+        oImage.src = e.target.result;
+
+        oImage.onload = function () { // binding onload event
+
+            // we are going to display some custom image information here
+            sResultFileSize = bytesToSize(oFile.size);
+            
+        };
+    };
+
+    // read selected file as DataURL
+    oReader.readAsDataURL(oFile);
+	var vFD = new FormData(document.getElementById('upload_form')); 
+
+
+}
