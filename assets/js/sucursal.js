@@ -16,11 +16,7 @@
 // });
 cont=0;
 $(document).ready(function() {
-	var listvalues = localStorage.getItem('lists');
-//pase the value 
-var finalvalue = JSON.parse(listvalues);
-console.log(finalvalue);
-// it look like this { "1": "value1", "2": "value2", "3": "value3" };
+	
 	$.getJSON("assets/json/centro_medico.json", function (jsonResp) {
 		
         jsonResp.centros.centromedico1.forEach(function(item) {

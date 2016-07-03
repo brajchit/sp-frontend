@@ -1,9 +1,5 @@
 $(document).ready(function() {
-	console.log($("h1").val())
-	var txtInput = $("input").val();
-var listvalues = { lala: txtInput}
-
-    localStorage.setItem('lists', JSON.stringify(listvalues)); 
+	
 
     $.getJSON("assets/json/sucursales.json", function (jsonResp) {
         jsonResp.sucursales.sucursalGuayaquil.forEach(function(item) {
