@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Salud Primero</title>
-
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/master.css" rel="stylesheet">
@@ -60,12 +60,16 @@
 	<section class="container" id="formulario">
 	<form>
 	 <div class="row">
-		<div class="col-sm-6">
+	 <fieldset>
+		<div  class="col-sm-6">
+		
 		<div class="form-group row">
+			
 			<label for="nombre" class="col-sm-2 form-control-label">Nombres</label>
 			<div class="col-sm-10">
-			  <input type="text" class="form-control" id="nombre" placeholder="Nombres" required>
+			  <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
 			</div>
+			
 		</div>
 		<div class="form-group row">
 			<label for="apellido" class="col-sm-2 form-control-label">Apellidos</label>
@@ -97,9 +101,11 @@
 		  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
 		</div>
 	  </div>
+	 
 	  
   
   </div>
+  
 	  <div class="col-sm-6"  align="left">
 		
 		<img id="preview" align="left">  </img>
@@ -108,9 +114,25 @@
 		</div>
 		
 	  </div>
+	  </fieldset>
   </div>
-  <button class="btn btn-default" type="submit" name="button" id="boton">Enviar</button>
+
 </form>
+  <button type="button"  data-toggle="modal"  class="btn btn-default"  id="botonGuardar" data-target="#myModal">Guardar</button>
+  <button class="btn btn-default" type="submit" name="button" id="botonEditar">Editar</button>
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          <p>Guardado con éxito</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
 	</section>
 	<footer>
         <section class="container">

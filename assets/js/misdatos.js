@@ -8,14 +8,46 @@ function fileSelected() {
         oReader.onload = function(e){
 		// e.target.result contains the DataURL which we will use as a source of the image
         oImage.src = e.target.result;
-		oImage.onload = function () { // binding onload event
-			// we are going to display some custom image information here
-            sResultFileSize = bytesToSize(oFile.size);
-		};
+		
+		
     };
 	// read selected file as DataURL
     oReader.readAsDataURL(oFile);
 	var vFD = new FormData(document.getElementById('upload_form')); 
-
+	
 
 }
+$(document).ready(function() {
+
+
+$( "#botonGuardar" ).hide();
+$( "#botonEditar" ).click(function() {
+	
+	$('fieldset').attr('disabled',false)
+	
+	$( "#botonGuardar" ).show();
+	$( "#botonEditar" ).hide();
+});
+
+$('fieldset').attr('disabled',true)
+$.getJSON("assets/json/misdatos.json", function (jsonResp) {
+	 jsonResp.persona1.forEach(function(item) {
+		$('input#nombre.form-control').attr("value",item.nombre);
+		$('input#apellido.form-control').attr("value",item.apellido);
+		$('input#ced.form-control').attr("value",item.cedula);
+		$('input#dir.form-control').attr("value",item.direccion);
+		
+			$('input#telf.form-control').attr("value",item.telefono);
+		
+		$('input#inputEmail3.form-control').attr("value",item.email);
+		$('img#preview').attr("src",item.foto);
+	 })
+})
+
+$( "#botonGuardar" ).click(function() {
+	
+	$('fieldset').attr('disabled',true)
+	$( "#botonGuardar" ).hide();
+	$( "#botonEditar" ).show();
+});
+})
