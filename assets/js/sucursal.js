@@ -22,7 +22,7 @@ $(document).ready(function() {
         jsonResp.centros.centromedico1.forEach(function(item) {
             
            
-            $("#nombreTxt").text(finalvalue.lala);
+            $("#nombreTxt").text(item.nombre);
             $("#direccionTxt").text(item.direccion);
 			
 			item.tiposDeExamenes.forEach(function(item){
