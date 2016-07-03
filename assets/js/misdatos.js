@@ -17,15 +17,20 @@ function fileSelected() {
 	
 
 }
+function pregunta(){ 
+    $( this ).hide();
+	
+} 
 $(document).ready(function() {
 
 
-$( "#botonGuardar" ).hide();
+$( "button.btn.btn-default" ).hide();
+$( "#botonEditar" ).show();
 $( "#botonEditar" ).click(function() {
 	
 	$('fieldset').attr('disabled',false)
 	
-	$( "#botonGuardar" ).show();
+	$( "button.btn.btn-default" ).show();
 	$( "#botonEditar" ).hide();
 });
 
@@ -44,10 +49,5 @@ $.getJSON("assets/json/misdatos.json", function (jsonResp) {
 	 })
 })
 
-$( "#botonGuardar" ).click(function() {
-	
-	$('fieldset').attr('disabled',true)
-	$( "#botonGuardar" ).hide();
-	$( "#botonEditar" ).show();
-});
+
 })
