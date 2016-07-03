@@ -14,22 +14,24 @@
 								{"especialidad":"Dermatologo"}
 						]
 				,
-				"rowb": [
+			"rowb": [
 								{"especialidad":"Pediatria"},
 								{"especialidad":"Cardiologia"},
 								{"especialidad":"Dermatologo"},
 								{"especialidad":"Dermatologo"},
 								{"especialidad":"Dermatologo"}
-						]
+					]
 				,
-				"rowc": [
+			"rowc": [
 								{"especialidad":"Pediatria"},
 								{"especialidad":"Cardiologia"},
 								{"especialidad":"Dermatologo"},
 								{"especialidad":"Dermatologo"},
 								{"especialidad":"Dermatologo"}
-						]
-				
+					],
+			"fotos":["assets/img/01-screenshot.jpg","assets/img/02-screenshot.jpg","assets/img/03-screenshot.jpg","assets/img/04-screenshot.jpg",
+					 "assets/img/05-screenshot.jpg","assets/img/06-screenshot.jpg","assets/img/07-screenshot.jpg","assets/img/08-screenshot.jpg"
+			]
 				
 			
 			}

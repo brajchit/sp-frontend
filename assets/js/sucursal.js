@@ -14,25 +14,31 @@
     // }
     // google.maps.event.addDomListener(window, 'load', initialize);
 // });
-function verHorario(){
-	
-	$( "tr#primerFila" ).append("<td>lalala</td>");
-}
+cont=0;
 $(document).ready(function() {
-	
+	var listvalues = localStorage.getItem('lists');
+//pase the value 
+var finalvalue = JSON.parse(listvalues);
+console.log(finalvalue);
+// it look like this { "1": "value1", "2": "value2", "3": "value3" };
 	$.getJSON("assets/json/centro_medico.json", function (jsonResp) {
 		
         jsonResp.centros.centromedico1.forEach(function(item) {
             
            
-            $("#nombreTxt").text(item.nombre);
+            $("#nombreTxt").text(finalvalue.lala);
             $("#direccionTxt").text(item.direccion);
+			
 			item.tiposDeExamenes.forEach(function(item){
 				var $li = $('<li class="list-group-item"></li>');
 				$li.text(item);
 				$(".list-group").append($li)
 			})
-			
+			item.fotos.forEach(function(item){
+				cont=cont+1;
+				$("img#fig"+cont).attr("src",item);
+				
+			})
 				
 				
 				item.rowa.forEach(function(item)
