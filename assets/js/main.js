@@ -14,6 +14,9 @@ $(document).ready(function() {
 	$("#misdatos").click(function(event) {
         window.location = "misdatos.html"
     });
+	$("#ingresarMuestra").click(function(event) {
+        window.location = "ingresomuestra.html"
+    });
     $('#myModalZoom').on('show.bs.modal', function(e) {
         var button = $(e.relatedTarget);
         var modal = $(this)
