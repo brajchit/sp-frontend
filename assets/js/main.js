@@ -17,6 +17,10 @@ $(document).ready(function() {
 	$("#ingresarMuestra").click(function(event) {
         window.location = "ingresomuestra.html"
     });
+	
+	$("#listaDeMuestras").click(function(event) {
+        window.location = "listaDeResultados.html"
+    });
     $('#myModalZoom').on('show.bs.modal', function(e) {
         var button = $(e.relatedTarget);
         var modal = $(this)

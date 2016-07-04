@@ -13,7 +13,7 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/master.css" rel="stylesheet">
     <link href="assets/css/sucursal.css" rel="stylesheet">
-
+	<link href="assets/css/listaDeResultados.css" rel="stylesheet">
     <!-- Google font -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
@@ -64,7 +64,27 @@
                 <p>Gestión de Resultados de Exámenes Médicos.</p>
 
      </section>
-	 
+	 <div class="container" >
+	<div class="table-responsive">
+		<table class="table table-striped" >
+                    <thead >
+                        <tr id="listaEncabezado">
+                            <td>Resultado </td>
+                            <td>Código de Barras </td>
+                            <td>Estado</td>
+                            
+                        </tr>
+                    </thead>
+                    <tbody id="tabla" >
+                        
+                    </tbody>
+                </table>
+	</div>
+	<section  align="center">
+	<a href="ingresomuestra.html" ><i class="fa fa-plus-square-o fa-2x" aria-hidden="true" ></i></a>
+	<br><p>Agregar</p>
+	</section>
+	</div>
     
             
 
@@ -87,11 +107,12 @@
 
     <!-- Scripts -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/master.js" charset="utf-8"></script>
-   
+	
+    <script src="assets/js/listaDeResultados.js"></script>
+  
     
 
 
