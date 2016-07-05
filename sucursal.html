@@ -49,8 +49,11 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="action"><a href="#">Inicio</a></li>
-                        <li class=""><a href="#">Perfil</a></li>
+						<li class=""><a href="sucursales.html">Cambiar de centro</a></li>
+                        <li id="des" class="action"><a id="clikdes" href="#descripcion">Descripción</a></li>
+						<li id="galeria"><a  id="clikgaleria"  href="#screenshots">Galería</a></li>
+                        <li id="mapa1"><a id="clikmapa" href="#mapa">Como llegar</a></li>
+						
                     </ul>
                 </div>
             </div>
@@ -58,52 +61,53 @@
 
     </header>
 
-    <section class="container">
+    <section class="container" id="descripcion">
         <div class="col-sm-3"></div>
         <header class="col-sm-6">
             <h1>Centro médico1</h1>
 
         </header>
         <div class="row">
-
-            <article class="col-sm-12">
+			<article class="col-sm-4">
                 <h3>Descripción del centro médico</h3>
-                <div class="row" align="center">
-                    <div class="col-sm-6" align="right">
-                        <label style="font-weight: bold">Nombre del centro médico: </label>
-                    </div>
-                    <div class="col-sm-4 align" align="left">
-                        <label id="nombreTxt"></label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6" align="right">
-                        <label style="font-weight: bold">Dirección: </label>
-                    </div>
-                    <div class="col-sm-4 align" align="left">
-                        <label id="direccionTxt">Vía a la Costa</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6" align="right">
-                        <label style="font-weight: bold">Tipos de Exámenes: </label>
-                    </div>
-                    <div class="col-sm-4 align" align="left">
-                        <a href="#" data-toggle="modal" data-target="#myModalListaExams">Ver</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6" align="right">
-                        <label style="font-weight: bold">Horarios: </label>
-                    </div>
-                    <div class="col-sm-4 align " align="left">
-                        <a href="#" data-toggle="modal" data-target="#myModalHorario">Ver</a>
-                    </div>
-                </div>
-            </article>
+			</article>
+		</div>
+        <div class="row" >
+			<div class="col-sm-1"></div>
+            <div class="col-sm-3" id="campo" align="left" >
+				<label style="font-weight: bold" >Nombre del centro médico: </label>
+            </div>
+             <div class="col-sm-3" align="left" id="valor">
+                <label id="nombreTxt"></label>
+             </div>
         </div>
-
-
+        <div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-3" align="left" id="campo">
+				<label style="font-weight: bold" >Dirección: </label>
+            </div>
+            <div class="col-sm-3 align" align="left" id="valor">
+                <label id="direccionTxt"></label>
+            </div>
+        </div>
+        <div class="row">
+			<div class="col-sm-1"></div>
+            <div class="col-sm-3" align="left" id="campo">
+				<label style="font-weight: bold">Tipos de Exámenes: </label>
+            </div>
+            <div class="col-sm-3 align" align="left" id="valor">
+				<label><a style="color:black" href="#" data-toggle="modal" data-target="#myModalListaExams">Ver</a></label>
+            </div>
+		</div>
+        <div class="row">
+			<div class="col-sm-1"></div>
+            <div class="col-sm-3" align="left" id="campo">
+                <label style="font-weight: bold">Horarios: </label>
+            </div>
+            <div  class="col-sm-3 align " align="left" id="valor">
+                <label><a style="color:black" href="#" data-toggle="modal" data-target="#myModalHorario">Ver</a></label>
+            </div>
+        </div>
     </section>
     <div class="modal fade" id="myModalListaExams" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
@@ -116,8 +120,10 @@
         </div>
     </div>
     <div class="modal fade" id="myModalHorario" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	
         <div class="modal-dialog" role="document">
             <div class="modal-content">
+			<div class="table-responsive">
                 <table class="table table-striped">
                     <thead>
                         <tr>
@@ -130,32 +136,21 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr id="primerFila">
                             <td>7h30-9h30</td>
-                            <td>Pediatria</td>
-                            <td>Pediatria</td>
-                            <td>Pediatria</td>
-                            <td>Pediatria</td>
-                            <td>Pediatria</td>
+                            
                         </tr>
-                        <tr>
+                        <tr id="segundaFila">
                             <td>9h30-11h30</td>
-                            <td>Pediatria</td>
-                            <td>Pediatria</td>
-                            <td>Pediatria</td>
-                            <td>Pediatria</td>
-                            <td>Pediatria</td>
-                        </tr>
-                        <tr>
+                            
+                        </tr >
+                        <tr id="terceraFila">
                             <td>11h30-13h30</td>
-                            <td>Pediatria</td>
-                            <td>Pediatria</td>
-                            <td>Pediatria</td>
-                            <td>Pediatria</td>
-                            <td>Pediatria</td>
+                            
                         </tr>
                     </tbody>
                 </table>
+			</div>
             </div>
         </div>
     </div>
@@ -183,8 +178,8 @@
             <div class="row">
                 <!-- <ul class=""> -->
                 <li class="col-sm-6 col-md-3">
-                    <figure>
-                        <img src="assets/img/01-screenshot.jpg" alt="Screenshot 01">
+                    <figure >
+                        <img id="fig1"  alt="Screenshot 01">
                         <figcaption>
                             <div class="caption-content">
                                 <a id="01-screenshot.jpg" class="single_image" data-toggle="modal" data-target="#myModalZoom" href="#">
@@ -198,7 +193,7 @@
                 </li>
                 <li class="col-sm-6 col-md-3">
                     <figure>
-                        <img src="assets/img/02-screenshot.jpg" alt="Screenshot 01">
+                        <img  id="fig2" alt="Screenshot 02">
                         <figcaption>
                             <div class="caption-content">
                                 <a id="02-screenshot.jpg" class="single_image" data-toggle="modal" data-target="#myModalZoom" href="#" >
@@ -212,7 +207,7 @@
                 </li>
                 <li class="col-sm-6 col-md-3">
                     <figure>
-                        <img src="assets/img/03-screenshot.jpg" alt="Screenshot 01">
+                        <img  id="fig3" alt="Screenshot 03">
                         <figcaption>
                             <div class="caption-content">
                                 <a id="03-screenshot.jpg" class="single_image" data-toggle="modal" data-target="#myModalZoom" href="#" >
@@ -226,7 +221,7 @@
                 </li>
                 <li class="col-sm-6 col-md-3">
                     <figure>
-                        <img src="assets/img/04-screenshot.jpg" alt="Screenshot 01">
+                        <img  id="fig4" alt="Screenshot 04">
                         <figcaption>
                             <div class="caption-content">
                                 <a id="04-screenshot.jpg" class="single_image" data-toggle="modal" data-target="#myModalZoom" href="#" >
@@ -244,7 +239,7 @@
                 <!-- <ul class="row"> -->
                 <li class="col-sm-6 col-md-3">
                     <figure>
-                        <img src="assets/img/05-screenshot.jpg" alt="Screenshot 01">
+                        <img  id="fig5" alt="Screenshot 05">
                         <figcaption>
                             <div class="caption-content">
                                 <a id="05-screenshot.jpg" class="single_image" data-toggle="modal" data-target="#myModalZoom" href="#" >
@@ -258,7 +253,7 @@
                 </li>
                 <li class="col-sm-6 col-md-3">
                     <figure>
-                        <img src="assets/img/06-screenshot.jpg" alt="Screenshot 01">
+                        <img  id="fig6" alt="Screenshot 06">
                         <figcaption>
                             <div class="caption-content">
                                 <a id="06-screenshot.jpg" class="single_image" data-toggle="modal" data-target="#myModalZoom" href="#" >
@@ -272,7 +267,7 @@
                 </li>
                 <li class="col-sm-6 col-md-3">
                     <figure>
-                        <img src="assets/img/07-screenshot.jpg" alt="Screenshot 01">
+                        <img id="fig7" alt="Screenshot 07">
                         <figcaption>
                             <div class="caption-content">
                                 <a id="07-screenshot.jpg" class="single_image" data-toggle="modal" data-target="#myModalZoom" href="#" >
@@ -286,7 +281,7 @@
                 </li>
                 <li class="col-sm-6 col-md-3">
                     <figure>
-                        <img src="assets/img/08-screenshot.jpg" alt="Screenshot 01">
+                        <img id="fig8" alt="Screenshot 08" >
                         <figcaption>
                             <div class="caption-content">
                                 <a id="08-screenshot.jpg" class="single_image" data-toggle="modal" data-target="#myModalZoom" href="#" >
@@ -302,11 +297,11 @@
             </div>
         </div>
     </section>
-    <!-- Galeria -->
+    <!-- Galeria --> 
 
-    <section class="container">
-        <h1>Ubiccion</h1>
-        <div id="googleMap" style="width:100%;height:430px;">
+    <section class="container" id="mapa">
+        <h1>Ubicación</h1>
+			<div id="googleMap" style="width:100%;height:430px;">
         </div>
     </section>
 
@@ -332,9 +327,8 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/master.js" charset="utf-8"></script>
-    <script src="assets/js/master1.js" charset="utf-8"></script>
-    <script src="assets/js/main.js" charset="utf-8"></script>
-    <!-- <script src="assets/js/sucursal.js" charset="utf-8"></script> -->
+   <script src="assets/js/main.js" charset="utf-8"></script>
+    <script src="assets/js/sucursal.js" charset="utf-8"></script> 
 
 
     <script>

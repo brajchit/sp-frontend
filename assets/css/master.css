@@ -6,7 +6,7 @@
 body {
     /*font-family: 'Open Sans', sans-serif;*/
     /*font-family: 'Lato', sans-serif;*/
-    font-family: 'Roboto', sans-serif;
+    font-family: "PT Sans", Arial, serif;/*le cambie la letra*/
     padding-top: 70px;
 }
 body, html {
@@ -24,7 +24,26 @@ header#banner {
     overflow: auto;
     /*color: #fff;*/
 }
+#acordeon{
+	width:90%;
+	margin-left: 1%;
+	
+}
+#headingOne,#headingTwo,#headingThree{
+	background-color:yellowgreen;
+}
+#borde{
+	border-color:yellowgreen;
+}
+#carrusel{
+	width:90%;
+	
+	margin-bottom: 5%;
+}
 
+#cuerpo{
+	padding-top: 1%;
+}
 
 /* The animation code */
 section#cabecera{
@@ -83,6 +102,7 @@ nav.navbar {
 .navbar-default .navbar-nav>li.action a {
     color: #89bf00;
 }
+
 .navbar-default .navbar-nav>li>a:hover {
     /*color: #6f51c7;*/
     color: #89bf00;
@@ -91,6 +111,7 @@ nav.navbar {
     transition: border-bottom 2s;
     transition: padding-bottom .5s;
 }
+
 
 /* ---------------------------------------------------------
    Banner Jumbutron
@@ -184,6 +205,7 @@ body>section.container, section#pacientes {
     padding-top: 5em;
     padding-bottom: 5em;
     text-align: center;
+	
 }
 section#pacientes>header {
     padding-bottom: 5em;

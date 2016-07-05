@@ -8,7 +8,53 @@ $(document).ready(function() {
     $(".entrar").click(function(event) {
         window.location = "sucursales.html"
     });
-
+	$("#misexamenes").click(function(event) {
+        window.location = "misexamenes.html"
+    });
+	$("#misdatos").click(function(event) {
+        window.location = "misdatos.html"
+    });
+	$("#ingresarMuestra").click(function(event) {
+        window.location = "listaDeResultados.html"
+    });
+	$("a#clickpacientes").click(function(){
+					$("#paci").addClass("action");
+					$('#ope').removeClass("action");
+					$('#lab').removeClass("action");
+					$('#contact').removeClass("action");
+					$('#inicio').removeClass("action");
+	});
+	$("a#clickoperarios").click(function(){
+					$("#paci").removeClass("action");
+					$('#ope').addClass("action");
+					$('#lab').removeClass("action");
+					$('#contact').removeClass("action");
+					$('#inicio').removeClass("action");
+	});
+	$("a#clicklabo").click(function(){
+					$("#paci").removeClass("action");
+					$('#ope').removeClass("action");
+					$('#lab').addClass("action");
+					$('#contact').removeClass("action");
+					$('#inicio').removeClass("action");
+	});
+	$("a#clickcontact").click(function(){
+						$("#paci").removeClass("action");
+						$('#ope').removeClass("action");
+						$('#lab').removeClass("action");
+						$('#contact').addClass("action");
+						$('#inicio').removeClass("action");
+		});
+	$("a#clickinicio").click(function(){
+						$("#paci").removeClass("action");
+						$('#ope').removeClass("action");
+						$('#lab').removeClass("action");
+						$('#contact').removeClass("action");
+						$('#inicio').addClass("action");
+		});
+	$("#listaDeMuestras").click(function(event) {
+        window.location = "listaDeResultados.html"
+    });
     $('#myModalZoom').on('show.bs.modal', function(e) {
         var button = $(e.relatedTarget);
         var modal = $(this)

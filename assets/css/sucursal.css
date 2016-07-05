@@ -5,7 +5,18 @@ header#banner {
     overflow: auto;
     /*color: #fff;*/
 }
-
+#campo{
+	background-color: #bcdc6f ; 
+	
+}
+#valor{
+	border: #bcdc6f solid ;
+	
+}
+label{
+	color:black strong;
+	
+}
 /* The animation code */
 section#cabecera{
 	align:center;
@@ -25,6 +36,11 @@ header#banner {
     animation-name: mybanner;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+}
+
+.row{
+	padding-top:1%;
+	font-size:18px;
 }
 
 /* ==========================================================================

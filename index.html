@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="es">
- <!-- Joyce -->
+<html lang="es"> 
+ 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -51,11 +51,11 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="action"><a href="#">Inicio</a></li>
-                        <li class=""><a href="#pacientes">Pacientes</a></li>
-                        <li class=""><a href="#operarios">Operarios</a></li>
-						<li class=""><a href="#laboratoristas">Laboratoristas</a></li>
-                        <li class=""><a href="#contactenos">Cont&aacute;ctenos</a></li>
+                        <li class="action" id="inicio"><a id="clickinicio" href="#ini">Inicio</a></li>
+                        <li class="" id="paci"><a id="clickpacientes" href="#pacientes">Pacientes</a></li>
+                        <li class="" id="ope"><a id="clickoperarios" href="#operarios">Operarios</a></li>
+						<li class="" id="lab"><a href="#laboratoristas" id="clicklabo">Laboratoristas</a></li>
+                        <li class="" id="contac"><a id="clickcontact" href="#contactenos">Cont&aacute;ctenos</a></li>
                     </ul>
                 </div>
             </div>
@@ -63,7 +63,7 @@
 
         <!-- ************** banner************* -->
         <div class="container">
-            <section class="jumbotron">
+            <section class="jumbotron" id="ini">
                 <h2>Bienvenido a</h2>
                 <h1>Salud Primero S.A.</h1>
                 <p>Gestión de Resultados de Exámenes Médicos.</p>
@@ -93,54 +93,14 @@
                             </div>
                             <div class="form-footer">
                                 <button type="submit" class="btn btn-big btn-left btn-small entrar">Ingresar</button>
-                                <p>
-                                    <a id="btn-regist" data-toggle="modal" data-target="#myModalRegister" href="#" role="button" href="#">Registrarse</a> gratis
-                                </p>
+                                
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
             <!-- Modal Register -->
-            <div class="modal fade" id="myModalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <form>
-                            <div class="form-group form-modal">
-                                <label for="exampleInputEmail1">Nombre de Usuario</label>
-                                <input type="text" class="form-control" id="exampleInputUserName" placeholder="ingrese nombre de usuario" required="">
-                            </div>
-                            <div class="form-group form-modal">
-                                <label for="exampleInputEmail1">Correo</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ejemplo@hotmail.com" required="">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Contraseña</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="ingrese contraseña" required="">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Elegir Rol</label>
-                                <select class="form-control">
-                                    <option>Paciente</option>
-                                    <option>Operario</option>
-                                    <option>Laboratorista</option>
-                                </select>
-                            </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Acepto los Terminos
-                                </label>
-                            </div>
-                            <div class="form-footer">
-                                <button type="submit" class="btn btn-big btn-left btn-small entrar" >Registrar</button>
-                                <p>
-                                    si ya tiene cuenta <a data-toggle="modal" data-target="#myModalLogin" role="button" href="#" id="btn-toggle-login">Ingresar</a>
-                                </p>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+            
         </div>
         <!-- **** banner************* -->
     </header>
@@ -157,12 +117,12 @@
         </header>
         <div class="row">
             <article class="col-sm-4">
-                <a href="sucursales.html"><h1><i class="fa fa-user-md fa-2x" aria-hidden="true"></i></h1></a>
+                <h1><i class="fa fa-user-md fa-2x" aria-hidden="true"></i></h1>
                 <h3>Centros Medicos</h3>
                 <p>
                     Aquí usted podrá consultar que exámenes puede realizar en el centro médico con sus respectivos horarios.
                 </p>
-                <button class="btn btn-big btn-left btn-small" type="button" name="button" id="ingresar">Ingresar</button>
+                <button class="btn btn-big btn-left btn-small" type="button" name="button" id="ingresar" >Ingresar</button>
             </article>
             <article class="col-sm-4">
                 <h1><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></h1>
@@ -170,7 +130,7 @@
                 <p>
                     Aquí usted podrá ver los detalles de sus exámenes y los puede descargar.
                 </p>
-                <button class="btn btn-big btn-left btn-small" type="button" name="button">Ingresar</button>
+                <button class="btn btn-big btn-left btn-small" type="button" name="button" id="misexamenes">Ingresar</button>
             </article>
             <article class="col-sm-4">
                 <h1><i class="fa fa-user fa-2x" aria-hidden="true"></i></h1>
@@ -178,7 +138,7 @@
                 <p>
 					Aquí usted podrá ver su perfil.
                 </p>
-                <button class="btn btn-big btn-left btn-small" type="button" name="button">Ingresar</button>
+                <button class="btn btn-big btn-left btn-small" type="button" name="button" id="misdatos">Ingresar</button>
             </article>
         </div>
     </section>
@@ -233,17 +193,17 @@
                 <h1><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></h1>
                 <h3>Ingresar resultados de muestra</h3>
                 <p>
-                    Aquí usted podrá ingresar los resultados del análisis de una muestra.
+                    Aquí usted podrá ingresar los resultados del análisis de una muestra y marcar si está llegó con éxito.
                 </p>
-                <button class="btn btn-big btn-left btn-small" type="button" name="button">Ingresar</button>
+                <button class="btn btn-big btn-left btn-small" type="button" name="button" id="ingresarMuestra">Ingresar</button>
             </article>
             <article class="col-sm-6">
                 <h1><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></h1>
-                <h3>Notificaciones de muestras</h3>
+                <h3>Lista de muestras</h3>
                 <p>
-                    Aquí usted podrá marcar que la muestra médica haya llegado con éxito al laboratorio,o en su defecto notificar al operario.
+                    Aquí usted podrá visualizar la lista de los resultados de los análisis de las muestras recibidas.
                 </p>
-                <button class="btn btn-big btn-left btn-small" type="button" name="button">Ingresar</button>
+                <button class="btn btn-big btn-left btn-small" type="button" name="button" id="listaDeMuestras">Ingresar</button>
             </article>
 
         </div>
