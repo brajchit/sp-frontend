@@ -58,7 +58,21 @@ $(document).ready(function() {
 				$( "tr#terceraFila" ).append($li)
 				}
 				);
-				
+				$("a#clikgaleria").click(function(){
+					$("#galeria").addClass("action");
+					$('#des').removeClass("action");
+					$('#mapa1').removeClass("action");
+				});
+				$("a#clikdes").click(function(){
+					$("#des").addClass("action");
+					$('#mapa1').removeClass("action");
+					$('#galeria').removeClass("action");
+				});
+				$("a#clikmapa").click(function(){
+					$("#mapa1").addClass("action");
+					$('#des').removeClass("action");
+					$('#galeria').removeClass("action");
+				});
 			
 			
         });

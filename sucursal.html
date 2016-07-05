@@ -50,9 +50,9 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
 						<li class=""><a href="sucursales.html">Cambiar de centro</a></li>
-                        <li class="action"><a href="#descripcion">Descripción</a></li>
-						<li class=""><a href="#screenshots">Galería</a></li>
-                        <li class=""><a href="#mapa">Como llegar</a></li>
+                        <li id="des" class="action"><a id="clikdes" href="#descripcion">Descripción</a></li>
+						<li id="galeria"><a  id="clikgaleria"  href="#screenshots">Galería</a></li>
+                        <li id="mapa1"><a id="clikmapa" href="#mapa">Como llegar</a></li>
 						
                     </ul>
                 </div>
@@ -68,44 +68,44 @@
 
         </header>
         <div class="row">
-			<article class="col-sm-12">
+			<article class="col-sm-4">
                 <h3>Descripción del centro médico</h3>
 			</article>
 		</div>
         <div class="row" >
-			<div class="col-sm-4"></div>
-            <div class="col-sm-3" align="left">
-				<label style="font-weight: bold">Nombre del centro médico: </label>
+			<div class="col-sm-1"></div>
+            <div class="col-sm-3" id="campo" align="left" >
+				<label style="font-weight: bold" >Nombre del centro médico: </label>
             </div>
-             <div class="col-sm-1" align="left">
+             <div class="col-sm-3" align="left" id="valor">
                 <label id="nombreTxt"></label>
              </div>
         </div>
         <div class="row">
-			<div class="col-sm-4"></div>
-			<div class="col-sm-3" align="left">
-				<label style="font-weight: bold">Dirección: </label>
+			<div class="col-sm-1"></div>
+			<div class="col-sm-3" align="left" id="campo">
+				<label style="font-weight: bold" >Dirección: </label>
             </div>
-            <div class="col-sm-5 align" align="left">
+            <div class="col-sm-3 align" align="left" id="valor">
                 <label id="direccionTxt"></label>
             </div>
         </div>
         <div class="row">
-			<div class="col-sm-4"></div>
-            <div class="col-sm-3" align="left">
+			<div class="col-sm-1"></div>
+            <div class="col-sm-3" align="left" id="campo">
 				<label style="font-weight: bold">Tipos de Exámenes: </label>
             </div>
-            <div class="col-sm-5 align" align="left">
-				<a href="#" data-toggle="modal" data-target="#myModalListaExams">Ver</a>
+            <div class="col-sm-3 align" align="left" id="valor">
+				<label><a style="color:black" href="#" data-toggle="modal" data-target="#myModalListaExams">Ver</a></label>
             </div>
 		</div>
         <div class="row">
-			<div class="col-sm-4"></div>
-            <div class="col-sm-3" align="left">
+			<div class="col-sm-1"></div>
+            <div class="col-sm-3" align="left" id="campo">
                 <label style="font-weight: bold">Horarios: </label>
             </div>
-            <div  class="col-sm-5 align " align="left" >
-                <a id="ver" href="#" data-toggle="modal" data-target="#myModalHorario">Ver</a>
+            <div  class="col-sm-3 align " align="left" id="valor">
+                <label><a style="color:black" href="#" data-toggle="modal" data-target="#myModalHorario">Ver</a></label>
             </div>
         </div>
     </section>

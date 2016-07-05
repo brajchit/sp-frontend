@@ -102,6 +102,7 @@ nav.navbar {
 .navbar-default .navbar-nav>li.action a {
     color: #89bf00;
 }
+
 .navbar-default .navbar-nav>li>a:hover {
     /*color: #6f51c7;*/
     color: #89bf00;
@@ -110,6 +111,7 @@ nav.navbar {
     transition: border-bottom 2s;
     transition: padding-bottom .5s;
 }
+
 
 /* ---------------------------------------------------------
    Banner Jumbutron
