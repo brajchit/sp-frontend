@@ -73,7 +73,8 @@
 		</div>
 		<hr >
         
-		<form onSubmit="if(!confirm('Is the form filled out correctly?')){return false;}">
+		<form> <!--onSubmit="if(!confirm('Is the form filled out correctly?')){return false;}"-->
+		<fieldset disabled>
 			<div class="row">
 				
 				<div class="col-sm-2" align="center">
@@ -111,10 +112,15 @@
 					<h4>Resultado del análisis</h4>
 					
 				</article>
+				
 			</div>
-			<hr >
+			<hr  >
+			</fieldset>
 			
-			<div class="row">
+			</form>
+			
+			
+			<!--<div class="row">
 				
 				<div class="col-sm-2" align="center">
 					<label style="font-weight: bold">Campo 1: </label>
@@ -145,11 +151,12 @@
 				 <div class="col-sm-3" align="center">
 					<input type="text" id="campo4" placeholder="Campo 4" required>
 				 </div>
-			</div>
-			  <button  class="btn btn-default" onclick="mensaje()" type="submit" >Guardar</button>  
-		</form>
+			</div>-->
+			
+		
 </section>
-    
+    <INPUT id=text1 style="WIDTH: 60%; HEIGHT: 80%" > 
+			  <button  class="btn btn-default" onclick="mensaje()" type="submit" >Enviar</button>  
 	 <footer>
         <section class="container">
             <div class="row">

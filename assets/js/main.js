@@ -15,7 +15,7 @@ $(document).ready(function() {
         window.location = "misdatos.html"
     });
 	$("#ingresarMuestra").click(function(event) {
-        window.location = "ingresomuestra.html"
+        window.location = "listaDeResultados.html"
     });
 	
 	$("#listaDeMuestras").click(function(event) {
