@@ -21,10 +21,10 @@ $(document).ready(function() {
 			
 			if (item.estado=="fase3"){
 				cont=3;
-				$tdEnlace.append($('<a id="enlace"></a>'));
+				$tdEnlace.append($('<p id="enlace"></p>'));
 				$( "tr#primeraFila" ).append($tdEnlace);
-				$("a#enlace").text(item.tipo);
-				$("a#enlace").attr("href","examenes/"+item.tipo+".pdf");
+				$("p#enlace").text(item.tipo);
+				$("p#enlace").append('<a href="examenes/examen1.pdf" id="enlaceIcono"><i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i></a>');
 			}
 			$tdFecha.text(item.fecha);
 			$( "tr#primeraFila" ).append($tdFecha);
@@ -35,7 +35,7 @@ $(document).ready(function() {
 			}
         });
 		jsonResp.rowb.forEach(function(item) {
-			var $tdEnlace1= $('<td></td>');
+			var $tdEnlace1= $('<td id="lala"></td>');
 			var $tdFecha1 = $('<td></td>');
 			var $tdBarra1 = $('<td></td>')
 			if (item.estado=="fase1"){

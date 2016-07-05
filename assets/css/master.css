@@ -24,7 +24,26 @@ header#banner {
     overflow: auto;
     /*color: #fff;*/
 }
+#acordeon{
+	width:90%;
+	margin-left: 1%;
+	
+}
+#headingOne,#headingTwo,#headingThree{
+	background-color:yellowgreen;
+}
+#borde{
+	border-color:yellowgreen;
+}
+#carrusel{
+	width:90%;
+	
+	margin-bottom: 5%;
+}
 
+#cuerpo{
+	padding-top: 1%;
+}
 
 /* The animation code */
 section#cabecera{

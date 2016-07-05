@@ -1,32 +1,25 @@
 {
 	"sucursales":{
 		"sucursalGuayaquil":[
-			{"sucursal1": "Centro Médico1"},
-			{"sucursal1": "Centro Médico2"},
-			{"sucursal1": "Centro Médico3"},
-			{"sucursal1": "Centro Médico4"},
-			{"sucursal1": "Centro Médico5"},
-			{"sucursal1": "Centro Médico6"}
+			{"sucursal1": "Centro Kennedy Norte"},
+			{"sucursal1": "Centro Guasmo Sur"},
+			{"sucursal1": "Centro Bahia"}
+			
 			
 		],
 		"sucursalQuito":[
-			{"sucursal2": "Centro Médico7"},
-			{"sucursal2": "Centro Médico8"},
-			{"sucursal2": "Centro Médico9"},
-			{"sucursal2": "Centro Médico10"},
-			{"sucursal2": "Centro Médico11"},
-			{"sucursal2": "Centro Médico12"} 
+			{"sucursal2": "Centro Mitad del mundo"},
+			{"sucursal2": "Centro Cumbaya"},
+			{"sucursal2": "Centro Panecillo"}
+			
 			
 		],
 		"sucursalCuenca":[
-			{"sucursal3": "Centro Médico13"},
-			{"sucursal3": "Centro Médico14"},
-			{"sucursal3": "Centro Médico15"},
-			{"sucursal3": "Centro Médico16"},
-			{"sucursal3": "Centro Médico17"},
-			{"sucursal3": "Centro Médico18"},
-			{"sucursal3": "Centro Médico19"},
-			{"sucursal3": "Centro Médico20"}
+			{"sucursal3": "Centro Ricaurte"},
+			{"sucursal3": "Centro Tarqui"},
+			{"sucursal3": "Centro Santa Ana"}
+			
+			
 		]
 	}
 }

@@ -1,6 +1,4 @@
- <!-- Progress with steps -->
-
-    ol.progtrckr {
+	ol.progtrckr {
         margin: 0;
         padding: 0;
         list-style-type: none;
@@ -52,3 +50,28 @@
         font-size: 1.5em;
         bottom: -1.6em;
     }
+	a#enlaceIcono{
+		margin-left: 10%;
+		color:greenyellow;
+		
+	}
+	p#enlace{	
+		
+		margin-left: 20%;
+	}
+	tr#listaEncabezado{
+		background-color:yellowgreen;
+	}
+	div.table-responsive{
+		width:80%;
+	}
+	section#tabla.container{
+		margin-left:10%;
+		padding-top: 0;
+	}
+	#boton{
+		background-color:yellowgreen;
+		margin-top:1%;
+	}
+	
+	
