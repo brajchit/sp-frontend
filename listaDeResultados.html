@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<!-- Joyce -->
+
 
 <head>
     <meta charset="utf-8">
@@ -50,7 +50,7 @@
                     <ul class="nav navbar-nav navbar-right">
 						
                         <li class="action"><a href="#">Lista de resultados</a></li>
-						<li class=""><a href="ingresomuestra">Ingresar resultados</a></li>
+						<li class=""><a href="ingresomuestra.html">Ingresar resultados</a></li>
                         <li class=""><a href="index.html">Cerrar sesión</a></li>
 						
                     </ul>
@@ -62,17 +62,17 @@
 	<section  align="center">
                 <h1>Salud Primero S.A.</h1>
                 <p>Gestión de Resultados de Exámenes Médicos.</p>
-
+				<h3>Lista de Muestras</h3>
      </section>
-	 <div class="container" >
+	 <div class="container" id="tabla1">
 	<div class="table-responsive">
 		<table class="table table-striped" >
                     <thead >
                         <tr id="listaEncabezado">
-                            <td>Resultado </td>
+                            <td>Muestra </td>
                             <td>Código de Barras </td>
                             <td>Estado</td>
-                            
+                            <td>Acción</td>
                         </tr>
                     </thead>
                     <tbody id="tabla" >
@@ -80,10 +80,10 @@
                     </tbody>
                 </table>
 	</div>
-	<section  align="center">
+	<!--<section  align="center">
 	<a href="ingresomuestra.html" ><i class="fa fa-plus-square-o fa-2x" aria-hidden="true" ></i></a>
 	<br><p>Agregar</p>
-	</section>
+	</section>-->
 	</div>
     
             
@@ -112,6 +112,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
 	
     <script src="assets/js/listaDeResultados.js"></script>
+	<script src="assets/js/check.js"></script>
   
     
 

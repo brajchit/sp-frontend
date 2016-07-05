@@ -1,6 +1,8 @@
 [
-{"resultados":"Resultado del Exámen 1","codBarras":"00000000","estado":"bien"},
-
-{"resultados":"Resultado del Exámen 2","codBarras":"00990000","estado":"bien"},
-{"resultados":"Resultado del Exámen 3","codBarras":"00070000","estado":"mal"}
+{"resultados":"Muestra de Sangre","codBarras":"00000000","estado":"bien"},
+{"resultados":"Muestra de Heces","codBarras":"00990000","estado":"bien"},
+{"resultados":"Muestra de Orina","codBarras":"00990000","estado":"bien"},
+{"resultados":"Muestra de Orina","codBarras":"00990000","estado":"bien"},
+{"resultados":"Muestra de Orina","codBarras":"00990000","estado":"bien"},
+{"resultados":"Muestra de Heces","codBarras":"00070000","estado":"mal"}
 ]
