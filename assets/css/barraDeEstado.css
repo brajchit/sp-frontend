@@ -4,7 +4,15 @@
         list-style-type: none;
 		size:auto;
     }
-
+	li.progtrckr-done{
+		font-size:90%;
+	}
+	li.progtrckr-todo{
+		font-size:90%;
+	}
+	html{
+		width:100%;
+	}
     ol.progtrckr li {
         display: inline-block;
         text-align: center;

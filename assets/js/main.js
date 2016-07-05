@@ -17,7 +17,41 @@ $(document).ready(function() {
 	$("#ingresarMuestra").click(function(event) {
         window.location = "listaDeResultados.html"
     });
-	
+	$("a#clickpacientes").click(function(){
+					$("#paci").addClass("action");
+					$('#ope').removeClass("action");
+					$('#lab').removeClass("action");
+					$('#contact').removeClass("action");
+					$('#inicio').removeClass("action");
+	});
+	$("a#clickoperarios").click(function(){
+					$("#paci").removeClass("action");
+					$('#ope').addClass("action");
+					$('#lab').removeClass("action");
+					$('#contact').removeClass("action");
+					$('#inicio').removeClass("action");
+	});
+	$("a#clicklabo").click(function(){
+					$("#paci").removeClass("action");
+					$('#ope').removeClass("action");
+					$('#lab').addClass("action");
+					$('#contact').removeClass("action");
+					$('#inicio').removeClass("action");
+	});	
+	$("a#clickcontact").click(function(){
+						$("#paci").removeClass("action");
+						$('#ope').removeClass("action");
+						$('#lab').removeClass("action");
+						$('#contact').addClass("action");
+						$('#inicio').removeClass("action");
+		});	
+	$("a#clickinicio").click(function(){
+						$("#paci").removeClass("action");
+						$('#ope').removeClass("action");
+						$('#lab').removeClass("action");
+						$('#contact').removeClass("action");
+						$('#inicio').addClass("action");
+		});	
 	$("#listaDeMuestras").click(function(event) {
         window.location = "listaDeResultados.html"
     });
