@@ -27,7 +27,7 @@ header#banner {
 #acordeon{
 	width:90%;
 	margin-left: 1%;
-	
+
 }
 #headingOne,#headingTwo,#headingThree{
 	background-color:yellowgreen;
@@ -37,7 +37,7 @@ header#banner {
 }
 #carrusel{
 	width:90%;
-	
+
 	margin-bottom: 5%;
 }
 
@@ -101,6 +101,8 @@ nav.navbar {
 }
 .navbar-default .navbar-nav>li.action a {
     color: #89bf00;
+    padding-bottom: 2px;
+    border-bottom: 3px solid #89bf00;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -205,7 +207,7 @@ body>section.container, section#pacientes {
     padding-top: 5em;
     padding-bottom: 5em;
     text-align: center;
-	
+
 }
 section#pacientes>header {
     padding-bottom: 5em;

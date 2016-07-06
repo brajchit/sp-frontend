@@ -8,10 +8,10 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Salud Primero</title>
 
-    <!-- Bootstrap -->
+    <!-- stylesheets -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/master.css" rel="stylesheet">
-	<link href="assets/css/estadisticas.css" rel="stylesheet"  >
+    <link href="assets/css/operario.css" rel="stylesheet">
 
     <!-- Google font -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -21,11 +21,11 @@
 
     <!-- Font-awesome -->
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/histogram.css">
+    <link rel="stylesheet" href="assets/css/histogram.css">
 </head>
 
 <body>
-    <header >
+    <header>
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -42,92 +42,47 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class=""><a href="muestras-index.html">Muestras</a></li>
-                        <li class="action"><a href="#">Estadísticas</a></li>
+                        <li class="action"><a href="muestras-index.html">Muestras</a></li>
+                        <li class=""><a href="estadisticas.html">Estadísticas</a></li>
                         <li class=""><a href="index.html">Cerrar sesión</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- ************** cabecera************* -->
-        <div class="container" >
-            <section id="cabecera" align="center">
+    </header>
 
-                <h1>Salud Primero S.A.</h1>
-                <p>Gestión de Resultados de Exámenes Médicos.</p>
+    <section class="container containerMin">
+        <div class="row" id="create-search">
+            <div class="col-md-6" id="muestra-create">
+                <a href="muestra-crear.html">
+                    <span class="fa fa-plus-circle fa-3x"></span>
+                    <span id="text" class="fa">Registrar nueva muestra</span>
+                </a>
+            </div>
+            <div class="col-md-6" id="muestra-search">
+                <input class="form-control" type="text" name="search" value="" placeholder="buscar">
+            </div>
+        </div>
+    </section>
+    <section class="container containerMin" id="content">
+        <table class="table table-hover" id="tableMuestras">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Pasciente</th>
+                    <th>Enfermedad</th>
+                    <th>Lab Destino</th>
+                    <th>Modificado</th>
+                    <th>Editar/Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
 
-			</section>
-		</div>
-	</header>
+            </tbody>
+        </table>
+    </section>
 
-				<article class="col-sm-3" align="center" >
-					<h4>Estadísticas de:</h4>
-
-				</article><br>
-
-
-			<hr>
-	<section class="container" id="contenido">
-	<form action="">
-		<div class="row" id="filaDeRadios">
-			<div class="col-sm-3">
-				<input type="radio" id="radio" name="dato" value=""> Número de muestras por mes
-			</div>
-			<div class="col-sm-3">
-				<input type="radio" name="dato" id="radio1" value=""> Enfermedad
-			</div>
-			<div class="col-sm-3">
-				<input type="radio" name="dato" id="radio2" value=""> Laboratorio
-			</div>
-			<div class="col-sm-3">
-				<input type="radio" name="dato" id="radio3" value=""> Ciudad
-			</div>
-
-
-		</div>
-
-	</form>
-	<div class="row" >
-	    <div class="col-sm-9" >
-			<div id="graph" id="barras"></div>
-    	</div>
-				<div class="col-sm-3">
-				 <aside id="acordeon">
-
-				  <div class="panel panel-primary" id="borde" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel-heading" role="tab" id="headingTwo">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="jebenite.github.io/proyecto/sucursales.html#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Escoja el filtro:
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
-                      <div class="panel-body">
-                       <select class="c-select" id="filtro">
-						  <option selected>Filtar por</option>
-						  <option value="1">Rango de fechas</option>
-						  <option value="2">Enfermedad</option>
-						  <option value="3">Laboratorios asignados</option>
-					</select>
-
-				 </div>
-                      </div>
-                    </div>
-					</aside>
-					<button id="boton" class="btn btn-default" onclick="filtrar()">Filtrar</button>
-                  </div>
-
-
-				</div>
-	</div>
-
-
-
-	</section>
-
-
-	<footer>
+    <footer>
         <section class="container">
             <div class="row">
                 <nav class="nav-footer">
@@ -141,13 +96,14 @@
             </div>
         </section>
     </footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js" charset="utf-8"></script>
     <script src="assets/js/master.js" charset="utf-8"></script>
-	<script src="assets/js/histogram.js" charset="utf-8"></script>
-	<script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="assets/js/histogram.js" charset="utf-8"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="assets/js/operario.js" charset="utf-8"></script>
 </body>
 
 </html>
