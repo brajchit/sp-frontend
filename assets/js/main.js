@@ -17,6 +17,9 @@ $(document).ready(function() {
 	$("#ingresarMuestra").click(function(event) {
         window.location = "listaDeResultados.html"
     });
+	$("#estadisticas").click(function(event) {
+        window.location = "estadisticas.html"
+    });
 	$("a#clickpacientes").click(function(){
 					$("#paci").addClass("action");
 					$('#ope').removeClass("action");
